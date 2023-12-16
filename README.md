@@ -10,7 +10,7 @@ Estarei realizando sempre a atualização do projeto aqui no README. Porém, adi
 
 Desde já, muito sucesso a todos os contribuidores.
 
-#ESCOPO
+# ESCOPO
 
 Estamos criando esse projeto com o intuito de da visibilidade as formas de estudar, incentivando a galera a ensinar o que estão estudando.
 
