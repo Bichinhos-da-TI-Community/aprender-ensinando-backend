@@ -6,6 +6,6 @@ Aqui estarei sendo responsával pela Arquitetura do Projeto, serei algo como um 
 
 Atualmente, estamos abordando a ideia de API Rest, usaremos Spring Boot.
 
-Estarei realizando sempre a atualizando do projeto aqui no README. Porém, adicionareis as tasks aqui no repositório.
+Estarei realizando sempre a atualização do projeto aqui no README. Porém, adicionarei as tasks aqui no repositório.
 
 Desde já, muito sucesso a todos os contribuidores.
