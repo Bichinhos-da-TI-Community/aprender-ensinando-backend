@@ -1,0 +1,34 @@
+version: "3.5"
+services:
+  bd:
+    image: "postgres:16.0-alpine3.18"
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=aprendendoensinando
+    ports:
+      - 5430:5432
+
+  bd-test:
+    image: "postgres:16.0-alpine3.18"
+    environment:
+      - POSTGRES_USER=${DB_TEST_USER}
+      - POSTGRES_PASSWORD=${DB_TEST_PASSWORD}
+      - POSTGRES_DB=aprendendoensinandotest
+    ports:
+      - 5420:5432
+
+  aprendendo-ensinando:
+    image: aprendendo-ensinando
+    build:
+      context: .
+    environment:
+      TZ: America/Sao_Paulo
+      SPRING.DATASOURCE.URL: jdbc:postgresql://bd:5432/aprendendoensinando
+      SPRING.DATASOURCE.USERNAME: ${DB_USER}
+      SPRING.DATASOURCE.PASSWORD: ${DB_PASSWORD}
+      SPRING.JPA.HIBERNATE.DDL-AUTO: validate
+    ports:
+      - 3000:3000
+    depends_on:
+      - bd
