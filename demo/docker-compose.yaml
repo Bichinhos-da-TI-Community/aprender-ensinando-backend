@@ -27,7 +27,6 @@ services:
       SPRING.DATASOURCE.URL: jdbc:postgresql://bd:5432/aprendendoensinando
       SPRING.DATASOURCE.USERNAME: ${DB_USER}
       SPRING.DATASOURCE.PASSWORD: ${DB_PASSWORD}
-      SPRING.JPA.HIBERNATE.DDL-AUTO: validate
     ports:
       - 3000:3000
     depends_on:
